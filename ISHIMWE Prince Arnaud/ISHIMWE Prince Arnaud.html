@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <meta name="charset" content="UTF-8">
+        <style>
+            body {
+                font-size: 150%;
+                background-color: #ddd;
+                margin: 0;
+            }
+
+            select, input[type="submit"] {
+                font-size: 80%;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+            fieldset {
+                background-color: #ccc;
+                width: 50%;
+                position: absolute;
+                left: 350px;
+
+            }
+
+            input[type="submit"], input[type="reset"] {
+                width: 31%;
+                padding: 10px;
+                margin-bottom: 10px;
+                color: white;
+                background-color: green;
+                border: none;
+                border-radius: 5px;
+            }
+            form {
+                margin: -10px;
+            }
+
+            legend {
+                text-align: center;
+                color: BLUE;
+                font-weight: 2000;
+            }
+
+            body {
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <pre>
+        <form action="Forms.php" method="post">
+            <div>
+            <fieldset>
+                <legend>UNIVERSITY FORM</legend>
+            First name: <input type="text" name="fname">
+
+            Last name: <input type="text" name="lname">
+
+            <input type="radio" name="gender" value="Male"><label for="Rwanda">Male</label>
+            <input type="radio" name="gender" value="Female"><label for="Kenya">Female</label>
+
+            E-mail: <input type="email" placeholder="E-mail" name="email">
+
+            Grade: <input type="number" placeholder="Years of study" name="grade">
+
+            Telephone number: <input type="tel" placeholder="Telephone" name="phone">
+
+            Date of birth: <input type="date" name="birth">
+
+            Date of departure: <input type="date" name="departure">
+
+            Time of departure: <input type="time" name="time">
+
+            <label for="subject">What is your basic knowledge ?</label>
+
+            <input type="checkbox" name="knowledge" value="HTML"><label for="html">HTML</label>
+            <input type="checkbox" name="knowledge" value="CSS"><label for="css">CSS</label>
+            <input type="checkbox" name="knowledge" value="JAVASCRIPT"><label for="js">JAVASCRIPT</label>
+
+            <label for="success">What is your range of success</label>
+
+            <input type="range" name="success" min="0" max="100" value="50">
+
+            Create your university account
+
+            Username: <input type="text" name="user">
+
+            Password: <input type="password" name="password">
+
+            What would you like to study?
+
+            <select name="study" id="study">
+                <option value="software">Software Engineering</option>
+                <option value="machine">Machine Learning</option>
+                <option value="embedded">Embedded systems</option>
+                <option value="cyber">Cyber security</option>
+            </select>
+
+            Upload your CV: <input type="file" name="file">
+
+            <textarea name="comment" id="comment" rows="10" cols="50"></textarea>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </fieldset>
+        </pre>
+    </div>
+</form>
+
+    </body>
+</html>
